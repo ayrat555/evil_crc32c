@@ -1,11 +1,10 @@
 # EvilCrc32c
 
-**TODO: Add description**
+"Evil" version of the crc32c algorithm. It uses the bitwise arithmetic used in javascript, i.e. operands are converted to i32. It uses a rust nif.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `evil_crc32c` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `evil_crc32c` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -15,7 +14,9 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/evil_crc32c>.
+The docs can be found at <https://hexdocs.pm/evil_crc32c>.
 
+
+## Author
+
+Ayrat Badykov (@ayrat555)
