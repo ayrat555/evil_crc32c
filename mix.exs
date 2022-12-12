@@ -6,8 +6,26 @@ defmodule EvilCrc32c.MixProject do
       app: :evil_crc32c,
       version: "0.1.0",
       elixir: "~> 1.14",
+      description:
+        "Evil version of the crc32c algorithm. It uses the bitwise arithmetic used in javascript, i.e. operands are converted to i32",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      package: [
+        maintainers: ["Ayrat Badykov"],
+        licenses: ["MIT"],
+        links: %{"GitHub" => "https://github.com/ayrat555/evil_crc32c"}
+      ],
+      deps: deps(),
+      files: [
+        "mix.exs",
+        "native/evil_crc32c/.cargo/config",
+        "native/evil_crc32c/src",
+        "native/evil_crc32c/Cargo.toml",
+        "native/evil_crc32c/Cargo.lock",
+        "lib",
+        "LICENSE",
+        "README.md",
+        "CHANGELOG.md"
+      ]
     ]
   end
 
@@ -21,12 +39,10 @@ defmodule EvilCrc32c.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:rustler, "~> 0.26"},
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false}
-
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
   end
 end
