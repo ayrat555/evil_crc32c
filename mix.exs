@@ -4,7 +4,7 @@ defmodule EvilCrc32c.MixProject do
   def project do
     [
       app: :evil_crc32c,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.14",
       description:
         "Evil version of the crc32c algorithm. It uses the bitwise arithmetic used in javascript, i.e. operands are converted to i32",
@@ -17,7 +17,7 @@ defmodule EvilCrc32c.MixProject do
       deps: deps(),
       files: [
         "mix.exs",
-        "native/evil_crc32c/.cargo/config",
+        "native/evil_crc32c/.cargo/config.toml",
         "native/evil_crc32c/src",
         "native/evil_crc32c/Cargo.toml",
         "native/evil_crc32c/Cargo.lock",
