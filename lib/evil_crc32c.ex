@@ -53,7 +53,7 @@ defmodule EvilCrc32c do
       iex> EvilCrc32c.calc!("hello", true)
       <<76, 187, 113, 154>>
   """
-  @spec calc(binary(), boolean()) :: integer() | binary() | no_return()
+  @spec calc!(binary(), boolean()) :: integer() | binary() | no_return()
   def calc!(data, binary \\ true)
 
   def calc!(data, binary) do
