@@ -1,4 +1,8 @@
 defmodule EvilCrc32c do
+  @moduledoc """
+  "Evil" version of the crc32c algorithm. It uses the bitwise arithmetic used in javascript,
+  i.e. operands are converted to i32
+  """
   alias EvilCrc32c.Impl
 
   @doc """
