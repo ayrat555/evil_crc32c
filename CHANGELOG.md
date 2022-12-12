@@ -1,3 +1,7 @@
+## 0.1.2 (2022-12-12)
+
+  * fix rust files
+
 ## 0.1.1 (2022-12-12)
 
 * fix cargo config
