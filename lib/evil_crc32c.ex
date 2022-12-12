@@ -1,4 +1,8 @@
 defmodule EvilCrc32c do
+  @moduledoc """
+  "Evil" version of the crc32c algorithm. It uses the bitwise arithmetic used in javascript,
+  i.e. operands are converted to i32
+  """
   alias EvilCrc32c.Impl
 
   @doc """
@@ -49,7 +53,7 @@ defmodule EvilCrc32c do
       iex> EvilCrc32c.calc!("hello", true)
       <<76, 187, 113, 154>>
   """
-  @spec calc(binary(), boolean()) :: non_neg_integer() | no_return()
+  @spec calc!(binary(), boolean()) :: integer() | binary() | no_return()
   def calc!(data, binary \\ true)
 
   def calc!(data, binary) do
