@@ -6,13 +6,12 @@ defmodule EvilCrc32c.MixProject do
       app: :evil_crc32c,
       version: "0.1.0",
       elixir: "~> 1.14",
-      licenses: ["WTFPL"],
       description:
         "Evil version of the crc32c algorithm. It uses the bitwise arithmetic used in javascript, i.e. operands are converted to i32",
       start_permanent: Mix.env() == :prod,
       package: [
         maintainers: ["Ayrat Badykov"],
-        licenses: ["MIT"],
+        licenses: ["WTFPL"],
         links: %{"GitHub" => "https://github.com/ayrat555/evil_crc32c"}
       ],
       deps: deps(),
