@@ -15,14 +15,15 @@ defmodule EvilCrc32c.MixProject do
         links: %{"GitHub" => "https://github.com/ayrat555/evil_crc32c"},
         files: [
           "mix.exs",
-          "native/evil_crc32c/.cargo/config.toml",
+          "native/evil_crc32c/.cargo/",
           "native/evil_crc32c/src",
           "native/evil_crc32c/Cargo.toml",
           "native/evil_crc32c/Cargo.lock",
           "lib",
           "LICENSE",
           "README.md",
-          "CHANGELOG.md"
+          "CHANGELOG.md",
+          "checksum-*.exs"
         ]
       ],
       deps: deps()
