@@ -4,7 +4,7 @@ defmodule EvilCrc32c.MixProject do
   def project do
     [
       app: :evil_crc32c,
-      version: "0.2.0",
+      version: "0.2.2",
       elixir: "~> 1.14",
       description:
         "Evil version of the crc32c algorithm. It uses the bitwise arithmetic used in javascript, i.e. operands are converted to i32",
