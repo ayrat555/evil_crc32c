@@ -5,5 +5,6 @@ defmodule EvilCrc32c.Impl do
     otp_app: :evil_crc32c,
     crate: :evil_crc32c
 
-  def calc(_data), do: :erlang.nif_error(:nif_not_loaded)
+  def calc_crc32c(_data), do: :erlang.nif_error(:nif_not_loaded)
+  def calc_crc16(_data), do: :erlang.nif_error(:nif_not_loaded)
 end
