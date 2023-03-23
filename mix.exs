@@ -43,7 +43,7 @@ defmodule EvilCrc32c.MixProject do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
-      {:rustler, "~> 0.27"},
+      {:rustler, ">= 0.0.0", optional: true},
       {:rustler_precompiled, "~> 0.6"},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false}
