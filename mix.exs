@@ -1,10 +1,12 @@
 defmodule EvilCrc32c.MixProject do
   use Mix.Project
 
+  @version "0.2.4"
+
   def project do
     [
       app: :evil_crc32c,
-      version: "0.2.3",
+      version: @version,
       elixir: "~> 1.14",
       description:
         "Evil version of the crc32c algorithm. It uses the bitwise arithmetic used in javascript, i.e. operands are converted to i32",
