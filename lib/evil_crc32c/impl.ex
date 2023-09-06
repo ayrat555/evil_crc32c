@@ -7,7 +7,8 @@ defmodule EvilCrc32c.Impl do
     otp_app: :evil_crc32c,
     crate: :evil_crc32c,
     base_url: "https://github.com/ayrat555/evil_crc32c/releases/download/v#{version}",
-    force_build: System.get_env("EVIL_CRC32C_BUILD") in ["1", "true"],
+    force_build: System.get_env("RUSTLER_BUILD") in ["1", "true"],
+    targets: Enum.uniq(["x86_64-unknown-freebsd" | RustlerPrecompiled.Config.default_targets()]),
     version: version
 
   def calc_crc32c(_data), do: :erlang.nif_error(:nif_not_loaded)
