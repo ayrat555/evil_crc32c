@@ -1,3 +1,11 @@
+## 0.2.7 (2024-04-07)
+
+* Update rustler to 0.32 (https://github.com/ayrat555/evil_crc32c/pull/16)
+
+## 0.2.6 (2023-10-06)
+
+* Update rustler to 0.29 (https://github.com/ayrat555/evil_crc32c/pull/15)
+
 ## 0.2.5 (2023-03-23)
 
 * Use rust_precompiled (https://github.com/ayrat555/evil_crc32c/pull/10)
