@@ -24,3 +24,5 @@ evil_crc32c-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+/priv/native

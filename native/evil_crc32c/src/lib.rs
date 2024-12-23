@@ -1,6 +1,6 @@
 use rustler::{Binary, NifResult};
 
-rustler::init!("Elixir.EvilCrc32c.Impl", [calc_crc32c, calc_crc16]);
+rustler::init!("Elixir.EvilCrc32c.Impl");
 
 // 0x82f63b78 as i32;
 const POLY_CRC32C: i32 = -2097792136i32;
