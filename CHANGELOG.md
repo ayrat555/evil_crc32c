@@ -1,3 +1,7 @@
+## 0.2.7 (2024-12-26)
+
+* Update rustler to 0.35 (https://github.com/ayrat555/evil_crc32c/pull/17)
+
 ## 0.2.7 (2024-04-07)
 
 * Update rustler to 0.32 (https://github.com/ayrat555/evil_crc32c/pull/16)
