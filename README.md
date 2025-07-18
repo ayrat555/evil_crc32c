@@ -9,7 +9,7 @@ The package can be installed by adding `evil_crc32c` to your list of dependencie
 ```elixir
 def deps do
   [
-    {:evil_crc32c, "~> 0.2"}
+    {:evil_crc32c, "~> 0.2.9"}
   ]
 end
 ```

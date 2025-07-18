@@ -1,4 +1,8 @@
-## 0.2.7 (2024-12-26)
+## 0.2.9 (2025-07-18)
+
+* update rustler, fix gh actions (https://github.com/ayrat555/evil_crc32c/pull/18)
+
+## 0.2.8 (2024-12-26)
 
 * Update rustler to 0.35 (https://github.com/ayrat555/evil_crc32c/pull/17)
 
