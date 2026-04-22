@@ -1,7 +1,7 @@
 defmodule EvilCrc32c.MixProject do
   use Mix.Project
 
-  @version "0.2.9"
+  @version "0.2.10"
 
   def project do
     [
