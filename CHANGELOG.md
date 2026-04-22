@@ -1,3 +1,7 @@
+## 0.2.10 (2025-04-21)
+
+ * update rustler to 0.37.3 - [#20](https://github.com/ayrat555/cafezinho/pull/20)
+
 ## 0.2.9 (2025-07-18)
 
 * update rustler, fix gh actions (https://github.com/ayrat555/evil_crc32c/pull/18)
